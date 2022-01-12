@@ -6,10 +6,10 @@
     @selection-change="handleSelectionChange"
   >
     <el-table-column type="selection" width="55" />
-    <el-table-column label="Date" width="120">
+    <el-table-column label="Date" width="120" sortable >
       <template #default="scope">{{ scope.row.date }}</template>
     </el-table-column>
-    <el-table-column property="name" label="Name" width="120" />
+    <el-table-column property="name" label="Name" width="120" sortable  />
     <el-table-column property="address" label="Address" show-overflow-tooltip />
   </el-table>
   <div style="margin-top: 20px">
